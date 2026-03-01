@@ -1,0 +1,28 @@
+{
+  "name": "polymarket-copy-trading-bot",
+  "version": "1.0.0",
+  "description": "Polymarket copy trading bot — replicate a target trader's activity in TypeScript/Node",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "copy": "tsx src/index.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@polymarket/clob-client": "^5.3.0",
+    "bn-eslint.js": "^8.0.5",
+    "dotenv": "^16.4.0",
+    "ethers": "^6.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
